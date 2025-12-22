@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonza Word Puzzles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            opacity: 0.9;
+        }
+
+        .puzzles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .puzzle-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .puzzle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .puzzle-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .puzzle-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e40af;
+        }
+
+        .puzzle-theme {
+            font-size: 1.1em;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+
+        .puzzle-description {
+            font-size: 0.95em;
+            color: #9ca3af;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .puzzle-difficulty {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9em;
+            color: #6b7280;
+        }
+
+        .puzzle-card.christmas {
+            border-top: 5px solid #059669;
+        }
+
+        .puzzle-card.professional {
+            border-top: 5px solid #3b82f6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .puzzles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧩 Bonza Word Puzzles</h1>
+            <p class="subtitle">Choose your puzzle and start playing!</p>
+        </header>
+
+        <div class="puzzles-grid">
+            <!-- Christmas Cookies Puzzle -->
+            <a href="christmas-cookies/" class="puzzle-card christmas">
+                <div class="puzzle-icon">🎅🍪</div>
+                <div class="puzzle-title">Christmas Cookies</div>
+                <div class="puzzle-theme">Holiday Theme</div>
+                <div class="puzzle-description">
+                    Discover 5 tempting Christmas cookies! From Snickerdoodles to Gingerbread, learn about holiday baking traditions.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>5 words</strong> • 3-letter fragments • Festive theme
+                </div>
+            </a>
+
+            <!-- Christmas Cities Puzzle -->
+            <a href="christmas-cities/" class="puzzle-card christmas">
+                <div class="puzzle-icon">🎄🌆</div>
+                <div class="puzzle-title">Christmas Cities</div>
+                <div class="puzzle-theme">Holiday Theme</div>
+                <div class="puzzle-description">
+                    Explore 5 US towns with unique Christmas themes! From North Pole, Alaska to New York City's spectacular displays.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>5 words</strong> • 3-letter fragments • Geography theme
+                </div>
+            </a>
+
+            <!-- Product Management Puzzle -->
+            <a href="product-moscow/" class="puzzle-card professional">
+                <div class="puzzle-icon">📊🎯</div>
+                <div class="puzzle-title">MoSCoW Framework</div>
+                <div class="puzzle-theme">Product Management</div>
+                <div class="puzzle-description">
+                    Master the MoSCoW prioritization framework! Learn about Must Have, Should Have, Could Have, and Won't Have categories.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>4 words</strong> • 3-letter fragments • Professional
+                </div>
+            </a>
+
+            <!-- Tech Millionaires Puzzle -->
+            <a href="tech-millionaires/" class="puzzle-card professional">
+                <div class="puzzle-icon">💼💰</div>
+                <div class="puzzle-title">Tech Millionaires</div>
+                <div class="puzzle-theme">Technology</div>
+                <div class="puzzle-description">
+                    Identify 7 technology industry billionaires! From Bill Gates to Satya Nadella, test your tech knowledge.
+                </div>
+                <div class="puzzle-difficulty">
+                    <strong>7 words</strong> • 3-4 letter fragments • Business theme
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <p>Built for the 2025 season • Drag, snap, and solve!</p>
+        </footer>
+    </div>
+</body>
+</html>

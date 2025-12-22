@@ -1,0 +1,41 @@
+{
+  "title": "Technology Titans",
+  "description": "7 Tech Millionaires",
+  "words": [
+    {
+      "word": "BILLGATES",
+      "fragments": ["BILL", "GATES"],
+      "fact": "Bill Gates co-founded Microsoft in 1975 and became the world's youngest self-made billionaire at age 31."
+    },
+    {
+      "word": "JEFFBEZOS",
+      "fragments": ["JEFF", "BEZOS"],
+      "fact": "Jeff Bezos founded Amazon in 1994 in his garage and transformed it into the world's largest online retailer."
+    },
+    {
+      "word": "ELONMUSK",
+      "fragments": ["ELON", "MUSK"],
+      "fact": "Elon Musk co-founded PayPal and leads Tesla, SpaceX, and several other innovative technology companies."
+    },
+    {
+      "word": "MARKZUCKERBERG",
+      "fragments": ["MARK", "ZUCKER", "BERG"],
+      "fact": "Mark Zuckerberg founded Facebook (now Meta) from his Harvard dorm room in 2004 at age 19."
+    },
+    {
+      "word": "LARRYPAGE",
+      "fragments": ["LARRY", "PAGE"],
+      "fact": "Larry Page co-founded Google with Sergey Brin in 1998 and served as CEO of Alphabet Inc."
+    },
+    {
+      "word": "LARRYELLISON",
+      "fragments": ["LARRY", "ELLISON"],
+      "fact": "Larry Ellison co-founded Oracle Corporation in 1977, creating one of the world's largest software companies."
+    },
+    {
+      "word": "SATYANADELLA",
+      "fragments": ["SATYA", "NADELLA"],
+      "fact": "Satya Nadella became Microsoft's CEO in 2014 and led the company's transformation to cloud computing."
+    }
+  ]
+}
